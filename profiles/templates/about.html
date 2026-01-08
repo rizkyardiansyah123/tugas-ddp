@@ -1,0 +1,70 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-4 text-center">
+        <img src="{% static 'images/fotoprofile.jpeg' %}" class="img-fluid rounded-circle" alt="Profile Photo">
+    </div>
+    <div class="col-md-8">
+        <h2>Muhamad Rizky Ardiansyah</h2>
+        <p>Saya adalah mahasiswa di ST-NF yang tertarik dengan pengembangan web. Saya suka belajar teknologi baru dan membangun aplikasi yang bermanfaat.</p>
+
+        <h3>Riwayat Pendidikan</h3>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Tahun</th>
+                    <th>Jenjang</th>
+                    <th>Keterangan</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>2022-2023</td>
+                    <td>SMK</td>
+                    <td>Jurusan Teknik Komputer Dan Jaringan</td>
+                </tr>
+                <tr>
+                    <td>2025-2028</td>
+                    <td>Sekolah Tinggi Teknologi</td>
+                    <td>Teknik Informatika</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>Organisasi</h3>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Tahun</th>
+                    <th>Nama Organisasi</th>
+                    <th>Peran</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>2023-2024</td>
+                    <td>Ekstrakulikuler Hadroh</td>
+                    <td>Assisten Pelatih</td>
+                </tr>
+                <tr>
+                    <td>2022-2025</td>
+                    <td>Ekstrakulikuler Hadroh</td>
+                    <td>Anggota</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>Keahlian</h3>
+        <ul>
+            <li>HTML, CSS, JavaScript</li>
+            <li>Python, Django</li>
+            <li>Bootstrap</li>
+        </ul>
+        <h3>Pencapaian</h3>
+        <p>Belajar sistem operasi kali linux.</p>
+        <img src="{% static 'images/sistem operasi.jpeg' %}" class="img-fluid" alt="Seminar">
+    </div>
+</div>
+{% endblock %}
